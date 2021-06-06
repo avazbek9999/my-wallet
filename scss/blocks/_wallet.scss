@@ -1,0 +1,194 @@
+.wallet{
+    width: 100%;
+   background-color: #F7CD75;
+}
+
+.wallet .container{
+   width: 100%;
+   max-width: 1200px;
+//    max-height: 500px;
+   margin-top: 80px;
+   margin-bottom: 120px;
+   display: flex;
+   overflow: hidden;
+   
+   
+   
+
+}
+
+.left-box{
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: rgb(245, 239, 239);
+}
+
+.headding-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;  
+}
+
+.wallet__headding{
+    margin: 0;
+}
+
+.left-box__button{ 
+   
+ border: none;
+ background-color:transparent;
+ cursor: pointer;
+}
+
+.left-box__button__img{
+    background-color: transparent;
+    border: none;
+}
+// =========================form======================================
+.form-radio{
+    max-height: 430px;
+    overflow: auto;
+    
+}
+.form-radio__label{
+    width: 100%;
+    display: block;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.input__controller{
+     display: block;
+     padding: 10px;
+     background-color: white;
+    border: 1px solid white;
+     
+}
+
+.input__controller:hover{
+border: 1px solid black;
+}
+
+
+.input__text{
+    display: block;
+    color: #C3C4C6;
+
+}
+.input__text2{
+    display: block;
+    color: #C3C4C6;
+}
+
+.form-radio__input:checked + .input__controller{
+    background-color: rgb(23, 23, 102);
+}
+
+// ====================right box===================================
+
+.raight-box{
+    width: 700px; 
+    padding: 0 40px;
+    background-color: white;
+}
+
+
+
+.right-box__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raight-box__paragraf{
+    font-size: 20px;
+}
+
+.raight-box__list{ 
+    max-height: 400px;
+    list-style: none;
+    margin: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0; 
+    overflow: auto;
+}
+
+.raight-box__item{
+    display: flex;
+    align-items: center;
+    
+}
+
+.raight-box__btm{
+    margin-right: 17px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+      
+}
+
+.paragraf{
+    margin-left: auto;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.paragraf--active{
+    color: rgb(34, 161, 34);
+}
+
+
+// =====================================adaptive vorska==========================
+
+@media only screen and (max-width: 971px){
+  .raight-box__item{
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      padding: 10px;
+  }
+
+  .paragraf{
+   margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 710px){
+ .wallet .container{
+     flex-direction: column;    
+    
+ }
+
+ .left-box{
+  max-width: 100%;
+ }
+
+ .raight-box {
+    max-width: 100%;
+ }
+ 
+ .raight-box__item{
+     flex-direction: row;
+ }
+}
+
+@media only screen and (max-width: 532px){
+    .raight-box__headding{
+        font-size: 20px;
+    }
+
+    .raight-box__paragraf{
+        font-size: 18px;
+    }
+    
+    
+    .raight-box__item{
+        flex-direction: column;
+    }
+}
+    
